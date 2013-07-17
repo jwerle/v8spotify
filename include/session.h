@@ -5,7 +5,6 @@
 #include "v8spotify.h"
 #include "object.h"
 
-
 namespace spotify {
 
 

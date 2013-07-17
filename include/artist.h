@@ -1,16 +1,22 @@
-#ifndef V8_SPOTIFY_ARTIST
-#define V8_SPOTIFY_ARTIST
+#ifndef V8_SPOTIFY_ARTIST_H
+#define V8_SPOTIFY_ARTIST_H
 
-#include "v8spotify.h"
+#include <spotify.h>
 #include "object.h"
+#include "request.h"
 #include "session.h"
+
 
 namespace spotify {
 
-	class Artist {
+	class Artist : Object {
 	public:
-		static Object
-		New();	
+		static Artist
+		New();
+
+
+		Request
+		Browse(artistbrowse_complete_cb *cb, sp_artistbrowse_type type);
 	};
 }
 

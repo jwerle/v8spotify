@@ -1,5 +1,5 @@
-#ifndef V8_SPOTIFY
-#define V8_SPOTIFY
+#ifndef V8_SPOTIFY_H
+#define V8_SPOTIFY_H
 
 
 #include <stdbool.h>
@@ -41,9 +41,18 @@ namespace spotify {
 class Type;
 class Object;
 class Session;
+class Request;
 class Artist;
 
 }
+
+
+#include "type.h"
+#include "object.h"
+#include "session.h"
+#include "request.h"
+
+#include "artist.h"
 
 
 #endif

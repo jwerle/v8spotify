@@ -1,17 +1,20 @@
-#ifndef V8_SPOTIFY_OBJECT
-#define V8_SPOTIFY_OBJECT
+#ifndef V8_SPOTIFY_OBJECT_H
+#define V8_SPOTIFY_OBJECT_H
 
-#include "v8spotify.h"
+
+#include <stdlib.h>
+#include "type.h"
+
 
 namespace spotify {
 
 	class Object {
 		void *ref_;
 
+	public:
 		Object () : ref_(NULL) {}
 
-	public:
-		static Object*
+		static Object *
 		New();
 
 		bool
